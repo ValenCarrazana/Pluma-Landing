@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+
+    <title>Mi Landing Page</title>
+  </head>
+
+
+  <body>
+    <!-- HEADER (BARRA SUPERIOR)-->
+    <header>
+    <img src="assets/img/logotipo.png" alt="LogoAnfibia" id="logoanfibia">
+    <img src="assets/img/plumalogo.png" alt="LogoPluma" class="logopluma">
+    </header>
+
+    <!-- PORTADA (PRIMERA PANTALLA)-->
+    <section id="portada" class="colorBlanco">
+       
+        <h1 id="tituloPrincipal">Un espacio creado para profesores que buscan incentivar la escritura en adolescentes</h1>
+     
+         <h3 class= "parrafo" id="primero">Unite para formar parte del café literario y además, recibir materiales didácticos innovadores 
+        que incentiven a tus estudiantes a convertirse en grandes escritores.</h3>
+      
+      <div class="boton-portada">
+         <button type="button" id="boton" class="boton-nuevo" onclick="window.location.href = '#formulario';" > Unirme  </button>
+      </div> 
+     
+
+    </section>
+
+    <!-- SECCIÓN 1 (PRIMERA PANTALLA LUEGO DE LA PORTADA)-->
+    <section id="seccion-1" class="colorNegro">
+      <h1 >¿Qué es Pluma?</h1>
+      <div class="linea"></div>
+      <p >Pluma es un Café Literario es un taller de una única convocatoria dirigida a Profesores a cargo de estudiantes de 14 a 16 años que estudien en secundarias de la Ciudad Autónoma de Buenos Aires y estén interesados en generar los vínculos entre estudiantes de diversas localidades, incorporar una rutina de escritura y Estimular la creación literaria a partir de diversos disparadores.
+      </p>
+      
+      <div class="img-flexbox">
+  
+
+        <img src="assets/img/imagen1.png" alt="Lectores" >
+        </div>
+
+      
+ 
+    </section>
+
+    
+
+    <!-- SECCIÓN 2 (SEGUNDA PANTALLA LUEGO DE LA PORTADA)-->
+    <section id="seccion-2">
+
+      <div class="titulo">
+        <h1 id="titulito">Nuestros materiales didacticos</h1>
+        <div class="linea" id="linea2"></div>
+      
+      </div>
+
+      <div class ="contenedorimagen"> 
+        <div class="bullet-2">
+        <img src="assets/img/libro1.png" class="posicion" alt="Libro">
+        <h6  class="item1">"12 consejos para fomentar la escritura en adolescentes"</h6>
+        <h2>Escrito por: <h7> Ana Martinez</h7> </h2>
+        </div>
+     
+        <div class="bullet-2">
+                <img src="assets/img/libro2.png" class="posicion" alt="Libro 2">
+        <h6  class="item1">“100 disparadores creativos para la producción literaria"</h6>
+        <h2>Escrito por: <h7> Valeria Gonzalez</h7> </h2>
+        </div>
+
+      </div>
+      
+    
+      
+    </section>
+
+    <!-- SECCIÓN 3 (TERCERA PANTALLA LUEGO DE LA PORTADA)-->
+    <section id="seccion-3">
+
+      <div class="item1">
+        <h1>Inscripciones </h1>
+        <div class="linea" id="linea3"></div>
+        <p>Las inscripciones para participar en esta increíble experiencia están oficialmente abiertas desde el 20 de Abril, y tendrás la oportunidad de inscribirte hasta el 20 de mayo. ¡Así que tienes mucho tiempo para asegurar tu lugar!</p>   
+      </div>
+    
+      <div class="item1">
+       <h1>Nuestro espacio</h1>
+       <div class="linea"></div>
+       <p>Nuestro evento se llevará a cabo en la icónica zona de San Telmo, Buenos Aires, una locación perfecta para disfrutar de la literatura en un ambiente acogedor y estimulante. Disfrutarás de un ambiente relajado donde podrás compartir tus ideas, descubrir nuevas obras literarias y conectarte con otros apasionados de la lectura. Además, habrá deliciosas opciones de café y snacks para acompañar tus conversaciones literarias.</p>
+     </div>
+
+    </section>
+
+      <!-- SECCIÓN 4 (CUARTA PANTALLA LUEGO DE LA PORTADA)-->
+
+    <section id="seccion-4">
+
+    <div class="item1">
+      <h1>Con Pluma podrás</h1>
+    <div class="linea" id="linea4"></div>
+    </div>
+    
+
+    <div class="contenedorimagen-2">
+
+      <div class="bullet-2" id="bulletmobile">
+      <img src="assets/img/libros.png" alt="Libros">
+      <h6 class="subtitulo"> Nueva Bibliografía </h6> 
+      <h5 class="texto-bullet">  tendrás material exclusivo para incentivar a tus estudiantes </h5>
+      
+    </div>
+
+    <div class="bullet-2" id="bulletmobile">
+      <img src="assets/img/amigos.png" alt="Amistad">
+        <h6 class="subtitulo" > Generar </h6> 
+        <h5 class="texto-bullet"> vínculos entre adolescentes de diversas localidades</h5> 
+      </div>
+
+    <div class="bullet-2" id="bulletmobile">
+      <img src="assets/img/imaginacion.png" alt="Creatividad">
+      <h6 class="subtitulo" > Estimular </h6> 
+      <h5 class="texto-bullet"> la creación literaria a partir de diversos disparadores </h5>
+    </div>
+
+    <div class="bullet-2" id="bulletmobile">
+      <img src="assets/img/escritura.png" alt="Escritura">
+      <h6 class="subtitulo" > Ayudarlos </h6>
+      <h5 class="texto-bullet"> a incorporar una rutina de escritura</h5>
+    </div>
+  </div>
+</section>
+
+  
+  <!-- SECCIÓN 5 (QUINTA PANTALLA LUEGO DE LA PORTADA)-->
+  <section id="seccion-5">
+  <h1>Unite a Pluma</h1>
+  <div class="linea" id="linea3"></div>
+  <p>Este evento es una oportunidad perfecta para que tus estudiantes puedan ampliar sus horizontes literarios, conocer a otros jóvenes lectores y crear recuerdos inolvidables en un entorno enriquecedor. ¡Inscríbete ahora para recibir el material y asegurar sus lugares en nuestro café literario para adolescentes en San Telmo, Buenos Aires! </p>
+  <p>Los esperamos con entusiasmo para compartir una experiencia literaria única. ¡No te lo pierdas!</p>
+  <img id="unirse" src="assets/img/unirse.jpg" alt="grupo de amigos">
+</section>
+ 
+
+
+<!-- SECCIÓN FORM -->
+<section id="formulario" class="form-section">
+  <div class="form-text">
+    <h6 id="izquierda">Es 100% gratuito</h6>
+      <h5 id="izquierda">¡Unite para empezar a recibir la información!</h5>
+  </div>
+  <form class="form">
+    <div class="form-group">
+      <input type="text" placeholder="Nombre" id="nombre" required>
+    </div>
+    <div class="form-group">
+      <input type="email" placeholder="Correo electrónico" id="email" required>
+    </div>
+    <div class="form-group" >
+      <button type="submit" id="btn-enviar-formulario">Enviar</button>
+    </div>
+  </form>
+</section>
+
+    <!-- FOOTER -->
+    <footer >
+      <div class="columna-iz" >
+         <img src="assets/img/redes.png" alt="Redes Sociales" class="imagen2">
+         <h2 class="colorBlanco" id="mobile">Textos | Podcast | Talleres | Periodismo | Performático | Tienda</h2>
+      </div>
+
+    <div class="columna-mid">
+      <h2 class="colorBlanco" id="tam">UNSAM Campus Miguelete - 25 de Mayo y Francia (CP 1650) - San Martín, Prov. de Buenos Aires - Argentina - ISSN 2344-9365</h2>
+    </div>
+
+    <div class="columna-de">
+      <img src="assets/img/anfibia.png" alt="Anfibia" class="imagen3">
+   </div>
+    
+    </footer>
+
+
+    <section id="feedback">
+        <div class="popup-contenedor oculto feedback">
+      <div class="popup">
+        <div class="cerrar">X</div>
+        <h1 id="feedback">¡Todo listo <span id="dato-nombre">Nombre y Apellido </span>!
+        </h1>
+        <p>
+          Ya te enviamos a <span id="dato-email">nombreyapellido@mail.com.</span> el contenido para tus clases. Nos estaremos contactando contigo por correo para terminar de administrar todo para el Cafe Literario.     
+        </p>
+        <h3>¡Que lo disfrutes!</h3>
+      </div>
+    </div>
+    </section>
+     
+
+  </body>
+</html>

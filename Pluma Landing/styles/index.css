@@ -1,0 +1,1030 @@
+/********
+Paso 0: Definimos tipografías y propiedades básicas del documento
+
+********/
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto/Roboto-Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+/* definimos el tamaño de tipografía base y la familia tipográfica por defecto */
+html,
+body {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.fondo{
+  display: block;
+}
+
+
+
+* {
+  box-sizing: border-box !important; /* Importante: esto hace que el tamaño de todas las cajas contemple el padding */
+}
+
+/* la familia tipográfica por defecto para los títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", bold;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom:10px;
+  margin-left: 13rem;
+  margin-right: 13rem;
+  line-height: 50px;
+  
+}
+
+.parrafo#primero{
+  margin-left: 10rem;
+  margin-right: 10rem;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+
+h1#tituloPrincipal{
+  
+  margin-left: 20rem;
+  margin-right: 20rem;
+  padding-top: 5rem;
+}
+
+h2 {
+  font-size: 15px;
+  font-family: "Roboto";
+  font-weight: bold;
+  color: #000000;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  padding: 30px;
+  
+ 
+}
+
+h4 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h5 {
+  font-size: 15px;
+  text-align: center;
+  font-family: "Roboto" sans-serif;
+  padding: 0px;
+  line-height: 15px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+h6 {
+  padding-top: 0px;
+  text-align: center;
+  font-size: 2rem;
+  color: #404040;
+  font-family: "Roboto";
+  font-weight: bold;
+
+}
+
+h7 {
+  font-size: 15px;
+  font-family: "Roboto";
+  font-weight: bold;
+  color: #01716d;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+p{
+  padding-left: 140px;
+  padding-right: 120px;
+  font-family: "Roboto";
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.boton-nuevo {
+  width: 20rem;
+  height: 6rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6653ff;
+  color: rgb(213, 210, 213);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+  font-size: 2rem;
+}
+
+
+.boton-portada button:hover {
+  background-color: #3a2e90;
+}
+
+
+.img-flexbox{
+  padding-top: 30px;
+  padding-bottom: 100px;
+  display:flex;
+  justify-content:center;
+}
+/********
+Paso 1: Definimos la estructura básica
+
+********/
+/* Barra de navegación superior */
+header {
+background-color: rgb(0, 0, 0);
+padding: 15px;
+}
+
+.logopluma{
+  position: absolute;
+  right: 50%;
+  left: 43%;
+}
+
+.linea {
+  padding-top: 0px;
+  margin-top: 0px;
+  border-top: 5px solid #f8ac9f;
+  height: 7px;
+  max-width: 280px;
+  margin-left: 135px;
+  border-radius: 5px;
+  padding-bottom: 30px;
+}
+
+.linea#linea2  {
+  max-width: 570px;
+  margin-left: 390px;
+}
+
+.linea#linea3  {
+  max-width: 250px;
+  margin-left: 130px;
+}
+
+.linea#linea4  {
+  max-width: 330px;
+  margin-left: 130px;
+}
+
+
+/********
+Paso 3: Trabajamos nuestra portada
+
+********/
+
+#portada {
+  background-image: url('../assets/img/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+
+
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 150px;
+  text-align: c1
+}
+
+
+.parrafo{
+  padding-top: 10px;
+  padding-left: 230px;
+  padding-right: 230px;
+  line-height: 30px;
+}
+
+.colorBlanco {
+  color: #fff;
+}
+
+.colorNegro {
+  color:#000000;
+}
+
+
+/********
+Paso 4: Trabajamos nuestra primera sección
+
+********/
+
+section#seccion-1 {
+  padding: 100px;
+ background-color: white;
+ 
+
+}
+
+
+/********
+Paso 5: Trabajamos nuestra segunda sección
+
+********/
+
+
+section#seccion-2{
+  background-color: #D7D4F6;
+  text-align: center;
+  padding-top: 100px;
+
+}
+
+.titulo{
+  width: 100%;
+  height: 0px;
+}
+
+.contenedorimagen{
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 130px;
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    height: 650px;
+    text-align: center;
+}
+
+.posicion{
+  padding-left: 20px;
+}
+
+
+
+/********
+Paso 6: Trabajamos nuestra tercera sección
+
+********/
+section#seccion-3 {
+
+padding: 100px;
+background-color: white;
+}
+
+.item1{
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+
+
+/********
+Paso 7: Trabajamos nuestra cuarta sección
+
+********/
+section#seccion-4 {
+
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  background-color:#D7D4F6 ;
+  height: 700px;
+
+  }
+
+  .contenedorimagen-2{
+    padding-top: 0px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0px;
+
+    
+  }
+
+.bullet-2{
+  padding-left: 30px;
+  padding-top:10px ;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+
+  .subtitulo{
+    padding-top: 20px;
+    color: #01716d;
+    
+  }
+
+  .texto-bullet{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+
+/********
+Paso 8: Trabajamos nuestra cuarta sección
+
+********/
+section#seccion-5 {
+
+  padding: 100px;
+  background-color:white ;
+  height: 750px;
+
+  }
+
+  img#unirse{
+    width: 90%;
+   padding-left: 100px;
+   padding-top: 20px;
+    
+  }
+
+
+/********
+Paso 9: form
+
+********/
+
+
+
+.form-section {
+  background-color: #D7D4F6;
+  padding-left: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-text {
+  text-align: left;
+  flex-basis: 30%;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.form-text h6 {
+  margin-bottom: 10px;
+}
+
+.form {
+  flex-basis: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 200px;
+}
+
+.form-group {
+  flex-basis: 45%;
+  margin-bottom: 10px;
+}
+
+
+.form-group input,
+.form-group button {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-group button {
+  background-color: #6653ff;
+  color: rgb(233, 233, 233);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+  height: 37px;
+}
+
+.form-group button:hover {
+  background-color: #3a2e90;
+}
+
+h6#izquierda{
+  text-align: left;
+}
+
+h5#izquierda{
+  text-align: left;
+}
+
+/********
+Paso 8: Trabajamos el footer
+
+********/
+footer {
+background-color: #141916;
+height: 150px;
+display: flex;
+flex-direction: row;
+}
+
+.imagen2{
+  padding-top: 15px;
+  padding-bottom: 10px;
+  width: 70%;
+}
+
+.imagen3{
+  padding-top: 15px;
+  padding-right: 100px;
+
+}
+
+.columna-iz{
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+
+}
+.columna-mid{
+  display: flex;
+  flex-direction: column;
+  padding:50px;
+  color: white;
+}
+.columna-de{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*******
+Paso 9: Trabajamos con el feedback ---------------------------------------------
+
+********/
+
+
+.popup-contenedor.oculto {
+  display: none;
+}
+
+.popup-contenedor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.66);
+}
+
+.popup-contenedor .popup {
+  background-color: #bbb;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.66);
+  width: 70%;
+  position: relative; /* Esto es para ubicar el botón de cerrar */
+}
+
+.popup-contenedor .popup h4 {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.popup-contenedor .popup p {
+  font-size: 3rem;
+}
+
+.popup-contenedor .popup p span {
+  color: #275666;
+  
+}
+
+
+
+#dato-nombre{
+  color: #275666;
+}
+
+.popup-contenedor .popup h3 {
+  text-align: left;
+  padding-left: 14rem;
+  margin-top: 1rem;
+  color: #555;
+}
+
+.popup-contenedor .popup .cerrar {
+  position: absolute;
+  right: 4rem;
+  top: 4rem;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #000;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.popup-contenedor .popup .cerrar:hover {
+  background-color: #333;
+  color: #fff;  
+}
+
+h1#feedback{
+  margin-top: 2rem;
+}
+
+
+/********
+Paso 10: deslizar seccion
+
+********/
+
+section{
+  scroll-margin-top:70px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+/********
+Paso 11: Trabajamos para que sea responsive  //////////////////MOBILE VERSION///////////
+
+********/
+@media screen and (min-width: 501px) {
+  .mobile-only {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .desktop-only {
+    display: none;
+  }
+
+  html,
+  body{
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  background-image: url('../assets/img/fondocelular.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+ }
+
+h1{
+  padding:0;
+  }
+
+
+/* Barra de navegación superior */
+
+header{
+text-align: center;
+padding: 0px;
+height: 60px;
+}
+
+img#img1{
+  display: none;
+}
+
+img#logoanfibia{
+  display: none;
+}
+
+.logopluma{
+  width: 30%;
+  padding-top: 15px;
+  margin-left: 0rem;
+  margin-right: 1rem;
+  left: 35%;
+}
+
+/* PORTAAAADAAAA */
+
+#portada{
+  background-image: url('../assets/img/fondoparacelular.jpg');
+  height: 650px;
+}
+
+
+h1{
+  text-align: left;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 5px ;
+  line-height: 45px;
+}
+
+h1#tituloPrincipal{
+  padding-top: 10px;
+  margin-top: 0px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.parrafo{
+  font-size: 16px;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.parrafo#primero{
+ margin-left: 1rem;
+ margin-right: 1rem;
+}
+
+
+button{
+  padding: 20px;
+  border-radius: 5px;
+  width: 260px;
+}
+
+/********
+SECCION UNO POST PORTADA
+********/
+
+section#seccion-1 {
+  background-color: white;
+  padding-left: 25px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 0px;
+ }
+
+
+
+ p{
+ padding-top: 0px;
+ padding-left: 25px;
+ padding-right: 20px;
+ padding-bottom: 30px;
+ font-size: 16px;
+ line-height: 35px;
+}
+
+.img-flexbox{
+  height: 400px;
+  width: 300px;
+}
+
+/********
+SECCION DOS POST PORTADA
+********/
+
+.titulo{
+  width: 100%;
+  height: 0px;
+}
+
+h1#titulito{
+  text-align: center;
+  font-size: 30px;
+}
+
+section#seccion-2{
+  background-color: #D7D4F6;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  height: 1100px;
+}
+
+
+.bullet-2{
+  height: 2000px;
+  padding-left: 0px;
+  padding-bottom: 100px;
+  text-align: center;
+  margin-left: 12px;
+}
+
+.posicion{
+  padding:0px;
+  padding-left: 50px;
+  width: 80%;
+  height: 80%;
+  text-align: center;
+}
+
+
+.contenedorimagen{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  text-align: center;
+}
+
+/********
+SECCION TRES POST PORTADA
+********/
+
+section#seccion-3{
+padding: 25px;
+}
+
+.item1#bullet2{
+padding-left: 0px;
+padding-top: 30px;
+padding-bottom: 15px;
+}
+
+/********
+SECCION CUATRO POST PORTADA
+********/
+
+section#seccion-4{
+  padding: 25px;
+  height: 1900px;
+  }
+  
+ 
+
+.contenedorimagen-2{
+  padding-left: 25px;
+  padding-right: 0%;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 10px;
+  text-align: center;
+}
+
+.bullet-2#bulletmobile{
+  width: 230px;
+  margin-left: 30px;
+}
+
+/********
+SECCION CINCO POST PORTADA
+********/
+section#seccion-5{
+  padding: 25px;
+  height: 700px;
+  }
+
+  img#unirse{
+    display: none;
+  }
+
+
+ /********
+lineas
+********/
+
+ .linea {
+  padding-top: 0px;
+  margin-top: 0px;
+  border-top: 5px solid #f8ac9f;
+  height: 5px;
+  max-width: 230px;
+  margin-left: 15px;
+  border-radius: 5px;
+  padding-bottom: 30px;
+}
+
+.linea#linea2  {
+display: none;
+}
+
+.linea#linea3  {
+  max-width: 190px;
+  margin-left: 18px;
+}
+
+.linea#linea4  {
+  max-width: 250px;
+  margin-left: 18px;
+}
+
+.form-section {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.form-text {
+  flex-basis: 100%;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.form {
+  flex-basis: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.form-group {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group button {
+  width: 100%;
+}
+
+.fondo{
+  display: none;
+}
+
+h6#izquierda{
+  text-align: center;
+}
+h5#izquierda{
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+
+
+/******************** FOOTER*****************************************/
+
+footer {
+  background-color: #141916;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  }
+  
+  .imagen2{
+    width: 50%;
+    position: absolute;
+    padding: 10px;
+    padding-top: 20px;
+
+  }
+  
+  .imagen3{
+    width: 90%;
+    position: absolute;
+    padding: 0px;
+    padding-left: 20px;
+  }
+  
+ .columna-iz{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.colorBlanco#mobile{
+  display: none;
+}
+
+.columna-mid{
+  display: flex;
+  flex-direction: row;
+  padding-left:50px;
+  padding-right:50px;
+  padding-bottom:10px;
+  margin-top: 50px;
+
+  color: white;
+}
+
+.colorBlanco#tam{
+  font-size: 10px;
+  text-align: center;
+}
+
+.columna-de{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0px;
+}
+
+
+
+
+ 
+/***********************feedback**************************************/
+
+.popup-contenedor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.66);
+}
+
+.popup-contenedor .popup {
+  background-color: #bbb;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.66);
+  width: 85%;
+  position: relative; /* Esto es para ubicar el botón de cerrar */
+}
+
+.popup-contenedor .popup h4 {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.popup-contenedor .popup p {
+  font-size: 18px;
+}
+
+.popup-contenedor .popup p span {
+  color: #275666;
+  
+}
+
+#dato-nombre{
+  color: #275666;
+}
+
+.popup-contenedor .popup h3 {
+  text-align: left;
+  padding-left: 2rem;
+  margin-top: 0px;
+  padding-top: 0px;
+  color: #555;
+  font-size: 18px;
+  padding-bottom: 50px;
+}
+
+.popup-contenedor .popup .cerrar {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #1e1e1e;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+
+.popup-contenedor .popup .cerrar:hover {
+  background-color: #333;
+  color: #fff;  
+}
+
+h1#feedback{
+  margin-top: 6rem;
+  font-size: 25px;
+}
+
+}
